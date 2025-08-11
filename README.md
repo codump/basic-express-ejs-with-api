@@ -40,7 +40,7 @@ app.use(
 ```
 
 ### express-rate-limit
-To lower or increase the rate limit or time, you'll need to edit the code below. Note that you can create a new `const limiterExtraSecure` with extra secure settings. And use that for API endpoints where you want to tighten the requests. Resource: [^resource]
+To lower or increase the rate limit or time, you'll need to edit the code below. Note that you can create a new `const limiterExtraSecure` with extra secure settings. And use that for API endpoints where you want to tighten the requests. [^1]
 ```js
 // Rate limiter
 const limiterDefault = rateLimit({
@@ -52,4 +52,4 @@ const limiterDefault = rateLimit({
 })
 // Rate limiter
 ```
-[^resource]: [https://express-rate-limit.mintlify.app/reference/configuration](https://express-rate-limit.mintlify.app/reference/configuration)
+[^1]: [https://express-rate-limit.mintlify.app/reference/configuration](https://express-rate-limit.mintlify.app/reference/configuration)
