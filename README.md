@@ -9,7 +9,6 @@ Run `npm install` and `npm start`
 - helmet [https://www.npmjs.com/package/helmet](https://www.npmjs.com/package/helmet)
 - express-rate-limit [https://www.npmjs.com/package/express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
 
-_*If you only want to use these core packages select the minimal branch. We choose to make the deluxe version on the main branch to give you the most goodies by default. And it might be helpful for the new kids on the block._
 ### Deluxe version, what packages does it use?
 - markdown-it [https://www.npmjs.com/package/markdown-it](https://www.npmjs.com/package/markdown-it)
 - highlight.js [https://www.npmjs.com/package/highlight.js](https://www.npmjs.com/package/highlight.js)
