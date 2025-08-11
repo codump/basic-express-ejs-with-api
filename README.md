@@ -14,7 +14,7 @@ Make sure you have the correct setting of `true` or `false` in the config.json. 
 
 ## Specific parts of the code
 ### Helmet
-This part can give some inexperienced users a headache. Because their code is correct yet it doesn't work while they implement it. That's because the connection to a source is rejected. To allow access you'll need to add the source in the code below. `Resource: [https://helmetjs.github.io/#reference](https://helmetjs.github.io/#reference)`
+This part can give some inexperienced users a headache. Because their code is correct yet it doesn't work while they implement it. That's because the connection to a source is rejected. To allow access you'll need to add the source in the code below. [`Resource`][1]
 ```javascript
 // Security headers, blocks all content thats not from the server itself or listed sites
 app.use(
@@ -40,7 +40,7 @@ app.use(
 ```
 
 ### express-rate-limit
-To lower or increase the rate limit or time, you'll need to edit the code below. Note that you can create a new `const limiterExtraSecure` with extra secure settings. And use that for API endpoints where you want to tighten the requests. `Resource: `[https://express-rate-limit.mintlify.app/reference/configuration](https://express-rate-limit.mintlify.app/reference/configuration)``
+To lower or increase the rate limit or time, you'll need to edit the code below. Note that you can create a new `const limiterExtraSecure` with extra secure settings. And use that for API endpoints where you want to tighten the requests. [`Resource`][2]
 ```js
 // Rate limiter
 const limiterDefault = rateLimit({
@@ -52,3 +52,6 @@ const limiterDefault = rateLimit({
 })
 // Rate limiter
 ```
+
+[1]: https://helmetjs.github.io/#reference
+[2]: https://express-rate-limit.mintlify.app/reference/configuration
