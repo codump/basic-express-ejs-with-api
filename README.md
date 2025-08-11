@@ -4,10 +4,10 @@ Fill in empty-config and rename to config.
 `npm install` and `npm start`
 
 What packages do we use?
-- express (https://www.npmjs.com/package/express)
-- ejs (https://www.npmjs.com/package/ejs)
-- helmet (https://www.npmjs.com/package/helmet)
-- express-rate-limit (https://www.npmjs.com/package/express-rate-limit)
+- express [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
+- ejs [https://www.npmjs.com/package/ejs](https://www.npmjs.com/package/ejs)
+- helmet [https://www.npmjs.com/package/helmet](https://www.npmjs.com/package/helmet)
+- express-rate-limit [https://www.npmjs.com/package/express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
 
 Emulate data
 
