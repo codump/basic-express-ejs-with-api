@@ -52,5 +52,5 @@ const limiterDefault = rateLimit({
 })
 // Rate limiter
 ```
-[^1]: [https://helmetjs.github.io/#reference](https://helmetjs.github.io/#reference)
-[^2]: [https://express-rate-limit.mintlify.app/reference/configuration](https://express-rate-limit.mintlify.app/reference/configuration)
+[^1]: https://helmetjs.github.io/#reference
+[^2]: https://express-rate-limit.mintlify.app/reference/configuration
