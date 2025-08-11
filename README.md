@@ -1,7 +1,7 @@
 # Basic Express and EJS with API
 
-Fill in empty-config and rename to config.
-`npm install` and `npm start`
+Fill in empty-config.json and rename it to config.json.
+Run `npm install` and `npm start`
 
 What packages do we use?
 - express [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
@@ -9,6 +9,5 @@ What packages do we use?
 - helmet [https://www.npmjs.com/package/helmet](https://www.npmjs.com/package/helmet)
 - express-rate-limit [https://www.npmjs.com/package/express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
 
-Emulate data
-
+###Emulate data
 Make sure you have the correct setting of `true` or `false` in the config.json. Else this might lead to unexpected data being overwritten by the emulated data. 
