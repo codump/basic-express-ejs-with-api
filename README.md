@@ -10,4 +10,4 @@ What packages do we use?
 - express-rate-limit [https://www.npmjs.com/package/express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
 
 ### Emulate data
-Make sure you have the correct setting of `true` or `false` in the config.json. Else this might lead to unexpected data being overwritten by the emulated data. 
+Make sure you have the correct setting of `true` or `false` in the config.json. Else this might lead to unexpected data being overwritten by the emulated data. This function is added for those who often code with realtime data. But since there are times the live data is empty and there still needs to be data to continuing development. There is this function to emulate the data via json files when the API gives an empty responce. 
