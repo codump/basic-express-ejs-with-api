@@ -9,5 +9,5 @@ What packages do we use?
 - helmet [https://www.npmjs.com/package/helmet](https://www.npmjs.com/package/helmet)
 - express-rate-limit [https://www.npmjs.com/package/express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
 
-###Emulate data
+### Emulate data
 Make sure you have the correct setting of `true` or `false` in the config.json. Else this might lead to unexpected data being overwritten by the emulated data. 
