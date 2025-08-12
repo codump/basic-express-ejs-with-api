@@ -11,7 +11,7 @@ Run `npm install` and `npm start`
 - express-xss-sanitizer [https://www.npmjs.com/package/express-xss-sanitizer](https://www.npmjs.com/package/express-xss-sanitizer)
 - express-validator [https://www.npmjs.com/package/express-validator](https://www.npmjs.com/package/express-validator)
 
-Only the deluxe version is available
+Only the deluxe version is available for now.
 
 ### Deluxe version, what packages does it use?
 - markdown-it [https://www.npmjs.com/package/markdown-it](https://www.npmjs.com/package/markdown-it)
