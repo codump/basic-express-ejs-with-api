@@ -8,6 +8,10 @@ Run `npm install` and `npm start`
 - ejs [https://www.npmjs.com/package/ejs](https://www.npmjs.com/package/ejs)
 - helmet [https://www.npmjs.com/package/helmet](https://www.npmjs.com/package/helmet)
 - express-rate-limit [https://www.npmjs.com/package/express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
+- express-xss-sanitizer [https://www.npmjs.com/package/express-xss-sanitizer](https://www.npmjs.com/package/express-xss-sanitizer)
+- express-validator [https://www.npmjs.com/package/express-validator](https://www.npmjs.com/package/express-validator)
+
+Only the deluxe version is available
 
 ### Deluxe version, what packages does it use?
 - markdown-it [https://www.npmjs.com/package/markdown-it](https://www.npmjs.com/package/markdown-it)
