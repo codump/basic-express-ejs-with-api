@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
     .then((res) => {
-      window.location.href = response.url;
+      window.location.href = res.url;
     })
     .catch((error) => {
       console.error(error);
