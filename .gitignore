@@ -1,6 +1,6 @@
 .vscode
 .github
-.github/workflows
+.gitdata
 node_modules
 basic-express-ejs.code-workspace
 config.json
