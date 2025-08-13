@@ -19,7 +19,7 @@
   white-space: pre;
 }
 .heroInner h1 {
-  margin-top: -1rem;
+  margin-top: -2rem;
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -46,4 +46,8 @@
   animation-name: blinking;
   animation-duration: 1.2s;
   animation-iteration-count: 100;
+}
+.ghBtns {
+  position: absolute;
+  margin-top: 40rem;
 }

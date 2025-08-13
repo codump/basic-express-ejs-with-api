@@ -31,9 +31,9 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         'default-src': "'self'",
-        'script-src': ["'self'"],
-        'connect-src': ["'self'"],
-        'style-src': ["'self'", "fonts.googleapis.com", "fonts.gstatic.com", "cdnjs.cloudflare.com"],
+        'script-src': ["'self'", "buttons.github.io"],
+        'connect-src': ["'self'", "api.github.com"],
+        'style-src': ["'self'", "fonts.googleapis.com", "fonts.gstatic.com", "cdnjs.cloudflare.com", "'unsafe-inline'"],
         'img-src': [
           "'self'", 'data:', "github.githubassets.com", "avatars.githubusercontent.com"
         ],
