@@ -39,6 +39,7 @@ app.use(
         ],
         'frame-src': ["'self'"],
         'worker-src': ["'none'"],
+        upgradeInsecureRequests: null
       },
     },
   }),
