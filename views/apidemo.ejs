@@ -3,7 +3,7 @@
     <main class="apidemo">
       <%- include('elements/breadcrumbs', { pageWelcome: pageWelcome }) -%>
       <p>
-        We will show you 2 ways of using the API. When you look at the source of this page in the <code>index.js</code> you see the backend version that passes the data to the EJS template <code>apidemo.ejs</code> to show a list of all users. And the other way is to use the frontend method in <code>apidemoFront.js</code> when we click on the user to get more data from them.
+        We will show you 2 ways of using the API. When you look at the source of this page in the <code>index.js</code> you see the backend version that passes the data to the EJS template <code>apidemo.ejs</code> to show a list of all users. And the other way is to use the frontend method in <code>apidemoFront.js</code> when we click on the user to get more data from them.<br/><br/>In the code we use the API → Bearerexample and API → Beareruserinfo these 2 endpoints are secured with a bearer token. The 2 endpoints available in the menu API → Example and API → Userinfo are using the same script yet they aren't secured so everyone can access them at all times.
       </p>
       <% if(users) { for(var i=0; i<users.length; i++) { %>
         <div class="profileList" data-id="<%= users[i]._id %>">
