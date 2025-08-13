@@ -76,7 +76,7 @@ app.get('/apidemo', async (req, res) => {
   const bearerToken = jwt.sign({ ip: ip }, secretBearerToken, { expiresIn: '1h' });
   res.cookie("jwt", bearerToken, { httpOnly: false, secure: false });
 
-  // fiddle
+  // Get all users
   const fetchUsers = async () => {
     let response = await fetch(`${baseURL}/api/example`, {
       method: "GET",
@@ -96,7 +96,7 @@ app.get('/apidemo', async (req, res) => {
     }
   }
   const users = await fetchUsers();
-  // fiddle
+  // Get all users
 
   res.render('apidemo', { 
     pageTitle: `Basic Express and EJS with API`, // Pass param to ejs template
