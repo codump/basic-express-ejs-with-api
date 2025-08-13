@@ -4,9 +4,9 @@
 
 1. Copy `empty-config.json` to `config.json` and fill in your settings.
 2. Install dependencies:  
-   npm install
+   `npm install`
 3. Start the server:  
-   npm start
+   `npm start`
 
 ---
 
@@ -34,8 +34,7 @@
 
 ## 🧪 Emulated Data Mode
 
-When enabled in `config.json` ("emulateData": true), the app serves JSON-based mock data when API responses are empty.  
-This is useful for development when the live feed is unavailable.
+When enabled in `config.json` ("emulateData": true), the app serves JSON-based mock data when API responses are empty. This is useful for development when the live feed is unavailable.
 
 ⚠ **Caution:** Misconfiguration can overwrite live data.
 
