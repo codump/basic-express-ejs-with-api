@@ -27,8 +27,8 @@
     <script type="text/javascript" src="js/apidemoFront.js"></script>
   <% } %>
   <% if(locals.page == 'readme') { %>
-    <link rel="stylesheet" href="css/readme.css" />
     <link rel="stylesheet" href="css/elements/syntax.css" />
+    <link rel="stylesheet" href="css/readme.css" />
   <% } %>
 	
 </head>
@@ -39,9 +39,12 @@
       <div class="headerInner">
         <div id="logoWrap"><img src="https://github.githubassets.com/favicons/favicon-dark.svg" alt="" class="gh" /><div class="logo"><%= pageTitle %></div> <span>v.<%= locals.version %></span></div>
         <nav>
-          <ul class="menu">
+          <div id="mobileMenu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul id="menu" class="menu">
             <a href="/"><li class="menuItem">Index</li></a>
-            <a href="#"><li class="menuItem">API endpoints
+            <a href="/apidemo"><li class="menuItem">API endpoints
               <ul>
                 <a href="/apidemo"><li class="menuItem">Example page</li></a>
                 <a href="/api/example" target="_new"><li class="menuItem" id="apiExample">API → Example</li></a>

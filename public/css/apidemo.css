@@ -57,3 +57,30 @@ main.apidemo .profileList p {
 .active {
   color: gold;
 }
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  
+}
+/* tablet */
+/* phone */
+@media only screen and (max-width: 435px) {
+  
+}
+@media only screen and (max-width: 400px) {
+  main.apidemo p {
+    padding-bottom: 3rem;
+  }
+  main.apidemo .profileList h3 {
+    font-size: 1.3rem;
+    line-height: 1.2rem;
+    display: inline;
+  }
+  main.apidemo .profileList p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  
+}
+/* phone */

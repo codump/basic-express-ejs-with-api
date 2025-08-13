@@ -9,3 +9,29 @@ main.readme h4,
 main.readme h5 {
   margin-top: 2rem;
 }
+/* tablet */
+@media only screen and (max-width: 768px) {
+  
+}
+/* tablet */
+/* phone */
+@media only screen and (max-width: 435px) {
+  
+}
+@media only screen and (max-width: 400px) {
+  main.readme p {
+    padding: 0.3rem 0;
+  }
+  main.readme ul {
+    max-width: 150px;
+    margin: 0;
+    padding: 0.3rem 1.5rem;
+  }
+  main.readme ul li a {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  
+}
+/* phone */

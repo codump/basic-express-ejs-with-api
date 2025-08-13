@@ -101,9 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
   el.addEventListener('mouseenter', () => typewriter.isPaused = true);
   el.addEventListener('mouseleave', () => typewriter.isPaused = false);
 
-  const logoWrap = document.getElementById('logoWrap');
-  logoWrap.addEventListener('click', () => window.location.replace("/"));
-
   const width = window.screen.width
   const height = window.screen.height
   const resolution = document.getElementById('resolution');

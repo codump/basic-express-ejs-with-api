@@ -51,3 +51,40 @@
   position: absolute;
   margin-top: 40rem;
 }
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  
+}
+/* tablet */
+/* phone */
+@media only screen and (max-width: 435px) {
+  
+}
+@media only screen and (max-width: 400px) {
+  .hero {
+    height: 65vh;
+  }
+  .heroInner {
+    width: 370px;
+  }
+  .heroInner h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .heroInner h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .typewrite::after { 
+    height: 1.2rem;
+  }
+  .ghBtns {
+    margin: 0 auto;
+    margin-top: 29rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  
+}
+/* phone */

@@ -19,6 +19,13 @@ a {
 a:hover {
   text-decoration: none;
 }
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
 code {
   background: #00000060;
   backdrop-filter: blur(10px);
@@ -112,6 +119,9 @@ nav a {
 #logoWrap span {
   color: #AAA;
   margin-left: 0.4rem;
+}
+#mobileMenu {
+  display: none;
 }
 ul.menu {
   font-family: "Work Sans", sans-serif;
@@ -303,8 +313,57 @@ footer a:hover {
 }
 @media only screen and (max-width: 400px) {
   .sizewrapper {
-    width: 400px;
+    width: 370px;
     margin: 0 auto;
+  }
+  main {
+    font-size: 1rem;
+    padding: 3rem 0;
+  }
+  main p {
+    padding: 2rem 0;
+  }
+  main h3 {
+    font-size: 1.4rem;
+  }
+  .logo {
+    font-size: 1rem;
+    line-height: 2.3rem;
+  }
+  #logoWrap img {
+    margin-bottom: 4px;
+  }
+  #logoWrap span {
+    font-size: 0.6rem;
+  }
+  #menu {
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: -10rem;
+    display: none;
+  }
+  ul.menu li.menuItem {
+    min-width: 350px;
+    background: #000;
+  }
+  ul.menu li.menuItem ul {
+    display: block;
+    position: relative;
+    background: #000;
+  }
+  ul.menu li.menuItem ul li {
+    margin: 0;
+    padding: 15px 0;
+  }
+  #mobileMenu {
+    display: block;
+  }
+  .cardsGrid {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .footerInner {
+    font-size: 0.55rem;
   }
 }
 @media only screen and (max-width: 360px) {
