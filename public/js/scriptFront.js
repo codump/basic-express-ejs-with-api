@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(redirectUrl, {
       headers: {
         'Authorization': `Bearer ${token}`
+        `Location: ${redirectUrl}`
       }
     })
     .then(() => {
