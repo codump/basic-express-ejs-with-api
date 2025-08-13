@@ -18,11 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const token = getCookie("jwt");
     const res = await fetch('/api/example',  { headers: { authorization: `Bearer ${token}` },  redirect: 'follow' })
     .then(res => {
-      console.log(res);
-      if (res.redirected) {
-        document.location = res.url;
-      }
-  })
+      document.location = res.url;
+    })
   });
   // API menu
 
