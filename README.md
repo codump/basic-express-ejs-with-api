@@ -1,6 +1,6 @@
 # Basic Express and EJS with API
 
-![Dependa](https://badgen.net/github/dependabot/codump/basic-express-ejs-with-api)
+![LastUpdate](https://badgen.net/github/last-commit/micromatch/micromatch/4.0.1) ![DependaBot](https://badgen.net/github/dependabot/codump/basic-express-ejs-with-api)
 
 ## 🚀 Getting Started
 
