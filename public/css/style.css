@@ -338,7 +338,7 @@ footer a:hover {
   }
   #menu {
     position: absolute;
-    margin-top: 0.5rem;
+    margin-top: 8px;
     margin-left: -10rem;
     display: none;
   }
