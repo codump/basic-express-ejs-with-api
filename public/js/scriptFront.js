@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   apiExample.addEventListener('click', async event => {
     const token = getCookie("jwt");
-    const res = await fetch('/api/example',  { headers: { authorization: token },  redirect: 'follow' })
+    const res = await fetch('/api/example',  { headers: { authorization: `Bearer ${token}` },  redirect: 'follow' })
     .then(res => {
       console.log(res);
       if (res.redirected) {
