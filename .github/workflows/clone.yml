@@ -78,7 +78,7 @@ jobs:
             echo "<a href='$repo'><img alt='GitHub Clones' src='$shields$url&logo=github'></a>" >> .github/CLONE.md
             echo '```' >> .github/CLONE.md
             
-            git add .github/CLONE.md
+            git add .github/CLONE.md -f
             git config --global user.name "GitHub Action"
             git config --global user.email "action@github.com"
             git commit -m "create clone count badge"
