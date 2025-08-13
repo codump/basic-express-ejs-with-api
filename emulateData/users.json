@@ -1,22 +1,5 @@
 [
   {
-    "_id": "688e2b0d7db58aca9ec5adc8",
-    "name": "Let's call me codumpus the test bot for now",
-    "avatar": "https://avatars.githubusercontent.com/u/108196527",
-    "slogan": "Recycle your code! ♻ https://codump.github.io/ ♻",
-    "socials": {
-      "fb": null,
-      "x": null,
-      "gh": "https://github.com/codump/"
-    },
-    "stats": {
-      "awards": {
-        "nodejs": false,
-        "ejs": false
-      }
-    }
-  },
-  {
     "_id": "671dc0ac3eb8ce55bc435319",
     "name": "Chuck Norris",
     "slogan": "I once pissed on an electric fence. This took down the power grid in Texas, Oklahoma, Arizona and parts of southern Utah.",
@@ -30,6 +13,23 @@
       "awards": {
         "nodejs": true,
         "ejs": true
+      }
+    }
+  },
+  {
+    "_id": "688e2b0d7db58aca9ec5adc8",
+    "name": "Let's call me codumpus the test bot for now",
+    "avatar": "https://avatars.githubusercontent.com/u/108196527",
+    "slogan": "Recycle your code! ♻ https://codump.github.io/ ♻",
+    "socials": {
+      "fb": null,
+      "x": null,
+      "gh": "https://github.com/codump/"
+    },
+    "stats": {
+      "awards": {
+        "nodejs": false,
+        "ejs": false
       }
     }
   }
