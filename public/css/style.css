@@ -311,7 +311,7 @@ footer a:hover {
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 435px) {
   .sizewrapper {
     width: 370px;
     margin: 0 auto;

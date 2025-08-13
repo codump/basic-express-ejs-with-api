@@ -67,7 +67,7 @@ main.apidemo .profileList p {
 @media only screen and (max-width: 435px) {
   
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 435px) {
   main.apidemo p {
     padding-bottom: 3rem;
   }
