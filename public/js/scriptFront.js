@@ -14,21 +14,16 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     return cookie[name];
   }
-  apiExample.addEventListener('click', () =>
-    $.ajax({
-      url: "/api/example",
-      type: "GET",
-      beforeSend: function(xhr) {
-        const token = getCookie("jwt");
-        xhr.setRequestHeader('Authorization', 'Bearer ' + token);
-      },
-      success: function() {
-        setTimeout(function() {
-            window.location.href = '/api/example';
-        }, 333);
+  apiExample.addEventListener('click', async event => {
+    const token = getCookie("jwt");
+    const res = await fetch('/api/example',  { headers: { authorization: token },  redirect: 'follow' })
+    .then(res => {
+      console.log(res);
+      if (res.redirected) {
+        document.location = res.url;
       }
-    }
-  ));
+  })
+  });
   // API menu
 
   // Modal 

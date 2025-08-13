@@ -31,7 +31,7 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         'default-src': "'self'",
-        'script-src': ["'self'", "ajax.googleapis.com"],
+        'script-src': ["'self'"],
         'connect-src': ["'self'"],
         'style-src': ["'self'", "fonts.googleapis.com", "fonts.gstatic.com", "cdnjs.cloudflare.com"],
         'img-src': [
