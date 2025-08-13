@@ -1,26 +1,45 @@
 # Basic Express and EJS with API
 
-Fill in empty-config.json and rename it to config.json.
-Run `npm install` and `npm start`
+## 🚀 Getting Started
 
-### What packages does it use?
-- express [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
-- ejs [https://www.npmjs.com/package/ejs](https://www.npmjs.com/package/ejs)
-- helmet [https://www.npmjs.com/package/helmet](https://www.npmjs.com/package/helmet)
-- express-rate-limit [https://www.npmjs.com/package/express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
-- express-xss-sanitizer [https://www.npmjs.com/package/express-xss-sanitizer](https://www.npmjs.com/package/express-xss-sanitizer)
-- express-validator [https://www.npmjs.com/package/express-validator](https://www.npmjs.com/package/express-validator)
-- jsonwebtoken [https://www.npmjs.com/package/jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
-- express-jwt [https://www.npmjs.com/package/express-jwt](https://www.npmjs.com/package/express-jwt)
+1. Copy `empty-config.json` to `config.json` and fill in your settings.
+2. Install dependencies:  
+   npm install
+3. Start the server:  
+   npm start
 
-Only the deluxe version is available for now.
+---
 
-### Deluxe version, what packages does it use?
-- markdown-it [https://www.npmjs.com/package/markdown-it](https://www.npmjs.com/package/markdown-it)
-- highlight.js [https://www.npmjs.com/package/highlight.js](https://www.npmjs.com/package/highlight.js)
+## 📦 Core Dependencies
 
-### Emulate data
-Make sure you have the correct setting of `true` or `false` in the config.json. Else this might lead to unexpected data being overwritten by the emulated data. This function is added for those who often code with realtime data. But since there are times the live feed is empty and there still needs to be data to continuing development. There is this function to emulate it via json files when the API gives an empty response. 
+- [express](https://www.npmjs.com/package/express) – Web framework for Node.js  
+- [ejs](https://www.npmjs.com/package/ejs) – View template engine  
+- [helmet](https://www.npmjs.com/package/helmet) – Adds security headers  
+- [express-rate-limit](https://www.npmjs.com/package/express-rate-limit) – Controls request rate  
+- [express-xss-sanitizer](https://www.npmjs.com/package/express-xss-sanitizer) – Prevents XSS attacks  
+- [express-validator](https://www.npmjs.com/package/express-validator) – Validates incoming data  
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) – Create and verify JWTs  
+- [express-jwt](https://www.npmjs.com/package/express-jwt) – JWT authentication middleware  
+
+> **Note:** Only the **Deluxe version** is available for now.
+
+---
+
+## 💎 Deluxe Extras
+
+- [markdown-it](https://www.npmjs.com/package/markdown-it) – Markdown parsing  
+- [highlight.js](https://www.npmjs.com/package/highlight.js) – Syntax highlighting  
+
+---
+
+## 🧪 Emulated Data Mode
+
+When enabled in `config.json` ("emulateData": true), the app serves JSON-based mock data when API responses are empty.  
+This is useful for development when the live feed is unavailable.
+
+⚠ **Caution:** Misconfiguration can overwrite live data.
+
+---
 
 ## Specific parts of the code
 ### Helmet
