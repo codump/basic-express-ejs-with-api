@@ -1,0 +1,59 @@
+#modal a {
+  margin:0;
+}
+
+main.apidemo p {
+  padding: 2rem 0;
+  padding-bottom: 6rem;
+  color: #BBB;
+}
+main.apidemo h1,
+main.apidemo h2,
+main.apidemo h3,
+main.apidemo h4,
+main.apidemo h5 {
+  margin-top: 2rem;
+}
+
+.profileList {
+  background: #00000030;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.233);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+.profileList:hover {
+  background: #00000060;
+  cursor: pointer;
+}
+.profileList img {
+  max-width: 100px;
+  float: left;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+main.apidemo .profileList h3 {
+  display: inline-block;
+  margin-top: 1rem;
+}
+main.apidemo .profileList p {
+  padding: 0;
+}
+
+.profileImg {
+  max-width: 50px;
+  float: left;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+.profileSlogan {
+  color: #BBB;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+.awards {
+  margin-top: 1rem;
+}
+.active {
+  color: gold;
+}

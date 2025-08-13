@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>
+		<%= pageTitle %>
+	</title>
+	<link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Slabo+13px&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="js/scriptFront.js"></script>
+
+  <% if(locals.page == 'index') { %>
+    <link rel="stylesheet" href="css/elements/hero.css" />
+    <script type="text/javascript" src="js/indexFront.js"></script>
+  <% } %>
+  <% if(locals.page == 'apidemo') { %>
+    <link rel="stylesheet" href="css/apidemo.css" />
+    <script type="text/javascript" src="js/apidemoFront.js"></script>
+  <% } %>
+  <% if(locals.page == 'readme') { %>
+    <link rel="stylesheet" href="css/readme.css" />
+    <link rel="stylesheet" href="css/elements/syntax.css" />
+  <% } %>
+	
+</head>
+
+<body>
+  <header>
+    <div class="sizewrapper">
+      <div class="headerInner">
+        <div id="logoWrap"><img src="https://github.githubassets.com/favicons/favicon-dark.svg" alt="" class="gh" /><div class="logo"><%= pageTitle %></div> <span>v.<%= locals.version %></span></div>
+        <nav>
+          <ul class="menu">
+            <a href="/"><li class="menuItem">Index</li></a>
+            <a href="#"><li class="menuItem">API endpoints
+              <ul>
+                <a href="/apidemo"><li class="menuItem">Example page</li></a>
+                <a href="/api/example" target="_new"><li class="menuItem">API → Example</li></a>
+                <a href="/api/userinfo/688e2b0d7db58aca9ec5adc8" target="_new"><li class="menuItem">API → Userinfo</li></a>
+              </ul>
+            </li></a>
+            <a href="/readme"><li class="menuItem">README.md</li></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>

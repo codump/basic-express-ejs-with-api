@@ -16,6 +16,8 @@ Only the deluxe version is available for now.
 ### Deluxe version, what packages does it use?
 - markdown-it [https://www.npmjs.com/package/markdown-it](https://www.npmjs.com/package/markdown-it)
 - highlight.js [https://www.npmjs.com/package/highlight.js](https://www.npmjs.com/package/highlight.js)
+- jsonwebtoken [https://www.npmjs.com/package/jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+- express-jwt [https://www.npmjs.com/package/express-jwt](https://www.npmjs.com/package/express-jwt)
 
 ### Emulate data
 Make sure you have the correct setting of `true` or `false` in the config.json. Else this might lead to unexpected data being overwritten by the emulated data. This function is added for those who often code with realtime data. But since there are times the live feed is empty and there still needs to be data to continuing development. There is this function to emulate it via json files when the API gives an empty response. 

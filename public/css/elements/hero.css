@@ -1,0 +1,49 @@
+.hero {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(-45deg, #47d670, #f79d00, #E94057, #8A2387);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+.heroInner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heroInner a {
+  margin: 0 5px;
+  color:#006be6;
+  display: contents;
+  white-space: pre;
+}
+.heroInner h1 {
+  margin-top: -1rem;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 5rem;
+  text-shadow: 1px 1px 3px #00000075;
+}
+.heroInner h2 {
+  font-family: "Slabo 13px", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px #00000075;
+}
+.typewrite::after { 
+  position: absolute;
+  display: inline-block;
+  content: '';
+  height: 3rem;
+  margin-left: 2px;
+  margin-top: 5px;
+  box-shadow: 1px 1px 3px #00000075;
+  border-right: 0.08em solid #FFF;
+  opacity: 100;
+  animation-name: blinking;
+  animation-duration: 1.2s;
+  animation-iteration-count: 100;
+}

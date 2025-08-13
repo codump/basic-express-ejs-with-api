@@ -1,0 +1,11 @@
+main.readme p {
+  padding: 1rem 0;
+  color: #BBB;
+}
+main.readme h1,
+main.readme h2,
+main.readme h3,
+main.readme h4,
+main.readme h5 {
+  margin-top: 2rem;
+}

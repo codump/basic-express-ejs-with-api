@@ -1,0 +1,8 @@
+<%- include('elements/header', { pageTitle: pageTitle, page: locals.page }) // Pass params to header element -%>
+  <div class="sizewrapper">
+    <main class="readme">
+      <%- include('elements/breadcrumbs', { pageWelcome: pageWelcome }) -%>
+      <%- mdToHTML %>
+    </main>
+  </div>
+<%- include('elements/footer') -%>

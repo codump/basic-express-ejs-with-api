@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: "Slabo 13px", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #333;
+  color: #EEE;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  margin: 0 5px;
+  color:#006be6;
+  text-decoration: underline;
+  display: inline-block;
+}
+a:hover {
+  text-decoration: none;
+}
+code {
+  background: #00000060;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.233);
+  border-radius: 10px;
+  line-height:2rem;
+  padding: 0 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+}
+.clear {
+  clear: both;
+}
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00000070;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+#overlay .closeModal {
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.35rem;
+  text-decoration: none;
+}
+#overlay .closeModal:hover {
+  color: #F00;
+}
+#modal {
+  position: relative;
+  width: 250px;
+  height:250px;
+  padding: 1.5rem;
+  background: #00000050;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.233);
+  box-shadow: 0 10px 25px #00000066;
+  border-radius: 15px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  box-shadow: 2px 2px 10px #00000050;
+  z-index: 9999;
+}
+.headerInner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+nav {
+  margin-left: auto;
+}
+nav a {
+  margin: 0;
+}
+#logoWrap {
+  cursor: pointer;
+}
+#logoWrap img {
+  float: left;
+  margin-top: 4px;
+}
+.logo {
+  float: left;
+  font-family: "Eczar", serif;
+  font-size: 1.5rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2px;
+}
+.gh {
+  max-height: 30px;
+  margin-right: 10px;
+}
+#logoWrap span {
+  color: #AAA;
+  margin-left: 0.4rem;
+}
+ul.menu {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  list-style: none inside;
+  margin: 0;
+  padding: 0;
+}
+ul.menu a {
+  color: #EEE;
+  text-decoration: none;
+}
+ul.menu li.menuItem {
+  position: relative;
+  padding: 15px 22px;
+  display: inline-block;
+  background: #111;
+  cursor: pointer;
+}
+ul.menu li.menuItem:hover {
+  display: inline-block;
+  background: #000;
+}
+ul.menu li.menuItem ul {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  margin-top: 15px;
+  display: none;
+}
+ul.menu li.menuItem:hover ul {
+  display: block;
+}
+ul.menu li.menuItem:hover ul li {
+  position: relative;
+  min-width: 10px;
+  width: 100%;
+}
+
+main {
+  padding: 10rem 0;
+  font-size: 1.2rem;
+}
+main h3 {
+  font-family: "Eczar", serif;
+  font-size: 1.7rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2px;
+}
+main p {
+  padding: 4rem 0;
+  color: #BBB;
+}
+main .justify {
+  text-align: justify;
+}
+
+.cardsSection {
+  padding: 3rem 0;
+  text-align: center;
+  color: #EEE;
+}
+.cardsSection h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #EEE;
+}
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background: #00000060;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.233);
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+  box-shadow: 0;
+  opacity: 0;
+  cursor: default;
+}
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:hover {
+  transform: translateY(-8px);
+  animation: boxglow2 15s ease infinite, fadeInUp 0.6s ease forwards;
+}
+.card .icon {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(-45deg, #47d670, #f79d00, #E94057, #8A2387);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+}
+.card h4 {
+  font-family: "Eczar", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.4;
+  min-height: 8rem;
+}
+.card::after {
+  display: block;
+  content: '';
+  margin-top: -1.8rem;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(-45deg, #47d670, #f79d00, #E94057, #8A2387);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+}
+.card hr {
+  height: 4px;
+  border: 0;
+  background: linear-gradient(-45deg, #47d670, #f79d00, #E94057, #8A2387);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+}
+
+footer {
+  width: 100%;
+  padding: 10px 0;
+  background: #151515;
+}
+.footerInner {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  margin: 0 5px;
+  color:#00b646;
+  text-decoration: none;
+}
+footer span {
+  margin: 0 5px;
+  color:#00b646;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* responsive settings */
+/* desktop */
+.sizewrapper {
+  width: 1366px;
+  margin: 0 auto;
+}
+/* desktop */
+/* tablet */
+@media only screen and (max-width: 768px) {
+  .sizewrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+/* tablet */
+/* phone */
+@media only screen and (max-width: 360px) {
+  .sizewrapper {
+    width: 360px;
+    margin: 0 auto;
+  }
+}
+/* phone */
+/* responsive settings */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes blinking {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes boxglow {
+  0% {
+    box-shadow: 0 10px 25px #bd336e66;
+  }
+  16.6% {
+    box-shadow: 0 10px 25px #ec544366;
+  }
+  33.3% {
+    box-shadow: 0 10px 25px #f6980466;
+  }
+  50% {
+    box-shadow: 0 10px 25px #a7b73366;
+  }
+  66.6% {
+    box-shadow: 0 10px 25px #f6980466;
+  }
+  83.2% {
+    box-shadow: 0 10px 25px #ec544366;
+  }
+  100% {
+    box-shadow: 0 10px 25px #bd336e66;
+  }
+}
+@keyframes boxglow2 {
+  0% {
+    box-shadow: 0 10px 25px #00000066;
+  }
+  50% {
+    box-shadow: 0 10px 25px #FFFFFF66;
+  }
+  100% {
+    box-shadow: 0 10px 25px #00000066;
+  }
+}

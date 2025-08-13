@@ -1,0 +1,15 @@
+<%- include('elements/header', { pageTitle: pageTitle, page: locals.page }) // Pass params to header element -%>
+  <div class="sizewrapper">
+    <main class="apidemo">
+      <%- include('elements/breadcrumbs', { pageWelcome: pageWelcome }) -%>
+      <p>
+        We will show you 2 ways of using the API. When you look at the source of this page in the <code>index.js</code> you see the backend version that passes the data to the EJS template <code>apidemo.ejs</code> to show a list of all users. And the other way is to use the frontend method in <code>apidemoFront.js</code> when we click on the user to get more data from them.
+      </p>
+      <% if(users) { for(var i=0; i<users.length; i++) { %>
+        <div class="profileList" data-id="<%= users[i]._id %>">
+          <img src="<%= users[i].avatar %>" alt="<%= users[i].name %>" /><h3><%= users[i].name %></h3><p><%= users[i].slogan %></p><div class="clear"></div>
+        </div>
+      <% } } %>
+    </main>
+  </div>
+<%- include('elements/footer') -%>

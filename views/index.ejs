@@ -1,0 +1,58 @@
+<%- include('elements/header', { pageTitle: pageTitle, page: locals.page }) // Pass params to header element -%>
+<%- include('elements/hero') -%>
+  <div class="sizewrapper">
+    <main>
+      <%- include('elements/breadcrumbs', { pageWelcome: pageWelcome }) -%>
+      <p class="justify">
+        Kickstart your Node.js applications with a solid foundation that combines simplicity, performance, and security. This starter project comes preconfigured with Express for efficient server-side development, EJS for clean and dynamic templating, Helmet to strengthen HTTP headers and protect against common vulnerabilities, and express-rate-limit to guard against brute-force attacks and excessive requests.
+        <br/><br/>
+        Whether you’re building a personal side project or a production-ready service, this setup saves you time by handling essential configurations out of the box. It’s lightweight, easy to understand, and ready to be extended so you can focus on creating features instead of reinventing the basics.
+      </p>
+      <section class="cardsSection">
+        <h3>Your Application’s Security Shield</h3>
+        <div class="cardsGrid">
+          <div class="card">
+            <div class="icon"><i class="fas fa-shield-virus"></i></div>
+            <h4>Cross-Site Scripting (XSS)</h4>
+            <p>Blocks malicious scripts from being injected into your site, protecting user data and preventing unauthorized actions.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-file-code"></i></div>
+            <h4>MIME-Sniffing</h4>
+            <p>Ensures browsers interpret files only as their declared type, reducing the risk of content-based attacks.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-user-secret"></i></div>
+            <h4>Man-in-the-Middle (MITM)</h4>
+            <p>Prevents attackers from intercepting or altering data sent between the client and server.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-ban"></i></div>
+            <h4>Clickjacking</h4>
+            <p>Blocks malicious overlays that trick users into clicking hidden UI elements.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-user-shield"></i></div>
+            <h4>Brute Force Protection</h4>
+            <p>Limits repeated failed login attempts to block automated password guessing attacks, keeping accounts safe from unauthorized access.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-database"></i></div>
+            <h4>Data Integrity Enforcement</h4>
+            <p>Validates and sanitizes data on the server to prevent tampering and ensure reliable application behavior.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-key"></i></div>
+            <h4>Bearer Authentication</h4>
+            <p>Uses secure tokens to verify user identity with each request, keeping private resources safe from unauthorized access.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+            <h4>Secure Template Rendering</h4>
+            <p>Escapes user content in templates to block malicious code and keep pages safe.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+<%- include('elements/footer') -%>
