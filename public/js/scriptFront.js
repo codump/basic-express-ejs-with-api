@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
     .then(() => {
-      window.location.href = redirectUrl;
+      header(`Authorization: Bearer ${token}, Location: ${redirectUrl}`);
     })
     .catch((error) => {
       console.error(error);
