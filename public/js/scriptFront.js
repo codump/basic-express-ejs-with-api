@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const redirectUrl ="/api/example"
     fetch(redirectUrl, {
       headers: {
-        'Authorization': `Bearer ${token}`
-        `Location: ${redirectUrl}`
+        'Authorization': `Bearer ${token}`,
+        "Location": `${redirectUrl}`
       }
     })
     .then(() => {
