@@ -1,6 +1,6 @@
 # Basic Express and EJS with API
 
-https://badgen.net/github/dependabot/codump/basic-express-ejs-with-api
+![Dependa](https://badgen.net/github/dependabot/codump/basic-express-ejs-with-api)
 
 ## 🚀 Getting Started
 
