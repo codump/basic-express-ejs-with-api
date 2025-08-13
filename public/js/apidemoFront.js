@@ -1,5 +1,5 @@
 async function getUserInfo(userId) {
-  const getUrl = `api/userinfo/${userId}`;
+  const getUrl = `api/beareruserinfo/${userId}`;
   try {
     function getCookie(name) {
       let cookie = {};

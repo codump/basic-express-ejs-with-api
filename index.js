@@ -78,7 +78,7 @@ app.get('/apidemo', async (req, res) => {
 
   // Get all users
   const fetchUsers = async () => {
-    let response = await fetch(`${baseURL}/api/example`, {
+    let response = await fetch(`${baseURL}/api/bearerexample`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -151,12 +151,14 @@ const limiterDefault = rateLimit({
 // Rate limiter
 // Example
 const Example = require('./api/example')
-app.get('/api/example', jwtMiddleware, limiterDefault, Example); 
+app.get('/api/example', limiterDefault, Example);
+app.get('/api/bearerexample', jwtMiddleware, limiterDefault, Example); 
 // Example
 // Get user info
 const UserInfo = require('./api/userinfo')
 const validateUid = () => param('uid').notEmpty().escape(); // Sanitization and validation
-app.get('/api/userinfo/:uid', jwtMiddleware, validateUid(), limiterDefault, UserInfo); 
+app.get('/api/userinfo/:uid', validateUid(), limiterDefault, UserInfo); 
+app.get('/api/beareruserinfo/:uid', jwtMiddleware, validateUid(), limiterDefault, UserInfo); 
 // Get user info
 // API
 
