@@ -117,6 +117,7 @@ nav a {
   margin-right: 10px;
 }
 #logoWrap span {
+  font-size: 0.65rem;
   color: #AAA;
   margin-left: 0.4rem;
 }
@@ -287,6 +288,13 @@ footer span {
 }
 footer a:hover {
   text-decoration: underline;
+}
+.version {
+  position: absolute;
+  margin-top: -20px;
+  right: 10px;
+  font-size: 0.8rem;
+  color: #AAA;
 }
 
 /* responsive settings */

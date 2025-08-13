@@ -2,7 +2,7 @@
 
 ## 🚀 Getting Started
 
-1. Copy `empty-config.json` to `config.json` and fill in your settings.
+1. Rename `empty-config.json` to `config.json` and fill in your settings.
 2. Install dependencies:  
    `npm install`
 3. Start the server:  
