@@ -43,7 +43,7 @@ This is useful for development when the live feed is unavailable.
 
 ## Specific parts of the code
 ### Helmet
-This part can give some inexperienced users a headache. Because their code is correct yet it doesn't work while they implement it. That's because the connection to a source is rejected. To allow access you'll need to add the source in the code below. [`Reference`][1]
+This part can be tricky for beginners. Even if your code is correct, it may fail because the browser blocks connections to unlisted sources. To fix this, add the required source URLs to the configuration shown below. [`Reference`][1]
 ```javascript
 // Security headers, blocks all content thats not from the server itself or listed sites
 app.use(
@@ -69,7 +69,7 @@ app.use(
 ```
 
 ### express-rate-limit
-To lower or increase the rate limit or time, you'll need to edit the code below. Note that you can create a new `const limiterExtraSecure` with extra secure settings. And use that for API endpoints where you want to tighten the requests. [`Reference`][2]
+To adjust the rate limit or time window, modify the configuration below. You can also create a separate `const limiterExtraSecure` with stricter settings for sensitive API endpoints where you want to further limit requests. [`Reference`][2]
 ```js
 // Rate limiter
 const limiterDefault = rateLimit({
