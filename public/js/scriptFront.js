@@ -17,14 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
   apiExample.addEventListener('click', async event => {
     const token = getCookie("jwt");
     const redirectUrl ="/api/example"
-    fetch(redirectUrl, {
+    fetch(redirectUrl, {  redirect: "manual",
       headers: {
         'Authorization': `Bearer ${token}`,
         "Location": `${redirectUrl}`
       }
     })
-    .then(() => {
-      window.location.href = redirectUrl;
+    .then((res) => {
+      window.location.href = response.url;
     })
     .catch((error) => {
       console.error(error);
