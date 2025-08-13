@@ -74,7 +74,7 @@ app.get('/apidemo', async (req, res) => {
       ip = req.ip;
   }
   const bearerToken = jwt.sign({ ip: ip }, secretBearerToken, { expiresIn: '1h' });
-  res.cookie("jwt", bearerToken, { httpOnly: false, secure: true });
+  res.cookie("jwt", bearerToken, { httpOnly: false, secure: false });
 
   // fiddle
   const fetchUsers = async () => {
