@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
     .then(() => {
-      header(`Authorization: Bearer ${token}, Location: ${redirectUrl}`);
+      //header(`Authorization: Bearer ${token}, Location: ${redirectUrl}`);
     })
     .catch((error) => {
       console.error(error);
