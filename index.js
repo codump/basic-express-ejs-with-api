@@ -39,7 +39,7 @@ app.use(
         ],
         'frame-src': ["'self'"],
         'worker-src': ["'none'"],
-        upgradeInsecureRequests: null
+        upgradeInsecureRequests: null // disables the forced https upgrade for our live demo, remove this line when you use https protocol
       },
     },
   }),
@@ -74,7 +74,7 @@ app.get('/apidemo', async (req, res) => {
       ip = req.ip;
   }
   const bearerToken = jwt.sign({ ip: ip }, secretBearerToken, { expiresIn: '1h' });
-  res.cookie("jwt", bearerToken, { httpOnly: false, secure: false });
+  res.cookie("jwt", bearerToken, { httpOnly: false, secure: false }); // set secure to true for https
 
   // Get all users
   const fetchUsers = async () => {
@@ -123,7 +123,7 @@ app.get('/readme', async (req, res) => {
       return ''; // use external default escaping
     }
   });
-  // USE ONLY for sources you trust, namely your own README.md https://raw.githubusercontent.com/highlightjs/highlight.js/main/README.md
+  // USE ONLY for sources you trust, namely your own README.md 
   await fetch('https://raw.githubusercontent.com/codump/basic-express-ejs-with-api/main/README.md').then(response => response.text())
   .then(result => { html = md.render(result) } );
 
