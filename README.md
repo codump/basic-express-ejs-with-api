@@ -1,7 +1,7 @@
 # Basic Express and EJS with API
 
 [![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&query=count&url=https://gist.githubusercontent.com/kipBO/1728b121ca53ab55b8b479bf6743de96/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
- ![LastUpdate](https://badgen.net/github/last-commit/codump/basic-express-ejs-with-api) 
+ ![LastUpdate](https://badgen.net/github/last-commit/codump/basic-express-ejs-with-api) ![DependaBot](https://badgen.net/github/dependabot/codump/basic-express-ejs-with-api)
 
 ## 🚀 Getting Started
 
