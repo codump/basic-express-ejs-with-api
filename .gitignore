@@ -5,3 +5,4 @@ node_modules
 basic-express-ejs.code-workspace
 config.json
 empty
+/.github
