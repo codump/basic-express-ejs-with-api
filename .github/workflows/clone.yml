@@ -61,7 +61,7 @@ jobs:
             -d @post_clone.json https://api.github.com/gists/${{ steps.set_id.outputs.GIST }} > /dev/null 2>&1
 
           if [ ! -f .github/CLONE.md ]; then
-            shields="https://img.shields.io/badge/dynamic/json?color=success&label=Clones&query=count&url="
+            shields="https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url="
             url="https://gist.githubusercontent.com/${{ github.actor }}/${{ steps.set_id.outputs.GIST }}/raw/clone.json"
             repo="https://github.com/MShawon/github-clone-count-badge"
             echo ''> .github/CLONE.md
