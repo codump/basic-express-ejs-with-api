@@ -3,7 +3,7 @@
 [![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&query=count&url=https://gist.githubusercontent.com/kipBO/1728b121ca53ab55b8b479bf6743de96/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
  ![Commits](https://badgen.net/github/commits/codump/basic-express-ejs-with-api?cache=300) ![LastUpdate](https://badgen.net/github/last-commit/codump/basic-express-ejs-with-api?cache=300) ![DependaBot](https://badgen.net/github/dependabot/codump/basic-express-ejs-with-api?cache=300)
 
-![Preview](https://github.com/user-attachments/assets/6467d66c-b5b3-41fc-9d64-5e1ce3f7c8d4)
+![Preview](https://raw.githubusercontent.com/codump/basic-express-ejs-with-api/refs/heads/main/public/images/preview.gif)
 
 ## 🚀 Getting Started
 

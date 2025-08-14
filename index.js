@@ -35,7 +35,7 @@ app.use(
         'connect-src': ["'self'", "api.github.com"],
         'style-src': ["'self'", "fonts.googleapis.com", "fonts.gstatic.com", "cdnjs.cloudflare.com", "'unsafe-inline'"],
         'img-src': [
-          "'self'", 'data:', "github.githubassets.com", "github.com", "github-production-user-asset-6210df.s3.amazonaws.com", "avatars.githubusercontent.com", "badgen.net", "img.shields.io"
+          "'self'", 'data:', "github.githubassets.com", "raw.githubusercontent.com", "avatars.githubusercontent.com", "badgen.net", "img.shields.io"
         ],
         'frame-src': ["'self'"],
         'worker-src': ["'none'"],
