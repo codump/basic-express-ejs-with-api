@@ -1,3 +1,5 @@
+import { ConLog } from "https://esm.sh/@codump/conlog";
+
 class Typewriter {
   constructor(el, data, period) {
     this.el = el;
@@ -104,6 +106,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const width = window.screen.width
   const height = window.screen.height
   const resolution = document.getElementById('resolution');
-  resolution.innerHTML = `w ${width} h ${height}`
-  
+  if(resolution) {
+    resolution.innerHTML = `w ${width} h ${height}`
+  } else {
+    ConLog(`You still have a resolution tool in your code`)
+  }
 });

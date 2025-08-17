@@ -1,4 +1,4 @@
-const { version, port, consoleLogErrors, baseURL, secretBearerToken } = require('./config.json');
+const { version, port, consoleLog, baseURL, secretBearerToken } = require('./config.json');
 const express = require('express');
 const path = require('node:path');
 const router = express.Router(); 
@@ -10,6 +10,11 @@ const jwt = require('jsonwebtoken');
 const { expressjwt: expressJwt } = require('express-jwt');
 
 // Deluxe version
+const { ConLog, ConLogInit, ConLogSet, ConLogStartMsg } = require('@codump/conlog')
+ConLogInit(consoleLog) 
+ConLogStartMsg(true) // remove or set false to delete the load message
+// ConLogSet({error: false, color: false})
+// All settings: https://github.com/codump/conlog#lets-check-the-full-details
 const Markdown = require('markdown-it');
 const hljs = require('highlight.js');
 // Deluxe version
@@ -31,7 +36,7 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         'default-src': "'self'",
-        'script-src': ["'self'", "buttons.github.io"],
+        'script-src': ["'self'", "buttons.github.io", "esm.sh"],
         'connect-src': ["'self'", "api.github.com"],
         'style-src': ["'self'", "fonts.googleapis.com", "fonts.gstatic.com", "cdnjs.cloudflare.com", "'unsafe-inline'"],
         'img-src': [
@@ -90,8 +95,8 @@ app.get('/apidemo', async (req, res) => {
       const data = await response.json();
       return data
     } else {
-      if(consoleLogErrors) {
-        console.log(response)
+      if(consoleLog) {
+       ConLog(response, 2)
       }
     }
   }
@@ -164,5 +169,5 @@ app.get('/api/beareruserinfo/:uid', jwtMiddleware, validateUid(), limiterDefault
 
 // Start app
 app.listen(port, () => {
-  console.log(`Web app listening on port ${port}`)
+  ConLog(`Web app listening on port ${port}`, 2)
 })

@@ -1,3 +1,5 @@
+import { ConLog } from "https://esm.sh/@codump/conlog";
+
 async function getUserInfo(userId) {
   const getUrl = `api/beareruserinfo/${userId}`;
   try {
@@ -18,10 +20,9 @@ async function getUserInfo(userId) {
       }
     });
     const data = await res.json();
-    //console.log(data)
     return data
   } catch (err) {
-    console.error("Fetch error:", err);
+    ConLog(err, 1)
   }
 }
 

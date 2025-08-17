@@ -1,3 +1,5 @@
+import { ConLog } from "https://esm.sh/@codump/conlog";
+
 document.addEventListener("DOMContentLoaded", () => {
   // Header
   const logoWrap = document.getElementById('logoWrap');

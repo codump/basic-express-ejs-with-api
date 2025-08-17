@@ -15,16 +15,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Slabo+13px&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css" />
-  <script type="text/javascript" src="js/scriptFront.js"></script>
+  
+  <script type="module" src="js/scriptFront.js"></script>
 
   <% if(locals.page == 'index') { %>
     <link rel="stylesheet" href="css/elements/hero.css" />
-    <script type="text/javascript" src="js/indexFront.js"></script>
+    <script type="module" src="js/indexFront.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   <% } %>
   <% if(locals.page == 'apidemo') { %>
     <link rel="stylesheet" href="css/apidemo.css" />
-    <script type="text/javascript" src="js/apidemoFront.js"></script>
+    <script type="module" src="js/apidemoFront.js"></script>
   <% } %>
   <% if(locals.page == 'readme') { %>
     <link rel="stylesheet" href="css/elements/syntax.css" />

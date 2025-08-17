@@ -32,6 +32,7 @@
 
 ## 💎 Deluxe Extras
 
+- [@codump/conlog](https://www.npmjs.com/package/@codump/conlog) – Console management
 - [markdown-it](https://www.npmjs.com/package/markdown-it) – Markdown parsing  
 - [highlight.js](https://www.npmjs.com/package/highlight.js) – Syntax highlighting  
 
