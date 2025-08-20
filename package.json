@@ -10,7 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@codump/conlog": "^2.0.3",
+    "@codump/conlog": "^2.0.4",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-jwt": "^8.5.1",
