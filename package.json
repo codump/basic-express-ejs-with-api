@@ -12,7 +12,7 @@
   "dependencies": {
     "@codump/conlog": "^2.0.8",
     "ejs": "^3.1.10",
-    "express": "^5.1.0",
+    "express": "^5.2.1",
     "express-jwt": "^8.5.1",
     "express-rate-limit": "^8.2.1",
     "express-validator": "^7.3.0",
